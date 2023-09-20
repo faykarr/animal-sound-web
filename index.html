@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 5 Faykar - Pem. Javascript - MSIB Batch 5</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header class="container-fluid bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-md-start">
+                    <h3 class="display-5">Tugas 5 - Nasyath Faykar</h3>
+                    <p class="lead">Course Pemrograman Javascript - MSIB Batch 5 - <b>NF Computer</b></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Page Content -->
+    <main>
+        <!-- Instruction -->
+        <div class="bg-primary-subtle border-bottom border-primary p-3">
+            <div class="container">
+                <p class="m-0 lead"><i class="bi bi-info-circle-fill text-primary me-1"></i> Arahkan mouse anda ke salah
+                    satu card hewan (hover) untuk melihat gambar hewan dan dengarkan suaranya.</p>
+            </div>
+        </div>
+
+        <!-- Animal & Sound with accordions and the title -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <h4><i class="bi bi-volume-up-fill me-1"></i> Hewan & Suaranya</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Kategori Burung
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card-group">
+                                                        <div class="card card-content">
+                                                            <img src="img/burung-merak.jpg"
+                                                                class="card-img-top opacity-50 h-75 object-fit-cover"
+                                                                alt="Burung Merak">
+                                                            <div class="card-body">
+                                                                <p class="card-text fw-bold">
+                                                                    Burung Merak
+                                                                    <audio src="sounds/suara-burung-merak.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card card-content">
+                                                            <img src="img/burung-hantu.jpg"
+                                                                class="card-img-top opacity-50 h-75 object-fit-cover "
+                                                                alt="Burung Hantu">
+                                                            <div class="card-body">
+                                                                <p class="card-text fw-bold">
+                                                                    Burung Hantu
+                                                                    <audio src="sounds/suara-burung-hantu.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card card-content">
+                                                            <img src="img/burung-perkutut.jpg"
+                                                                class="card-img-top opacity-50 h-75 object-fit-cover "
+                                                                alt="Burung Perkutut">
+                                                            <div class="card-body">
+                                                                <p class="card-text fw-bold">
+                                                                    Burung Perkutut
+                                                                    <audio src="sounds/suara-burung-perkutut.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Kategori Hewan Buas
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card-group">
+                                                        <div class="card card-content">
+                                                            <img src="img/harimau.jpg"
+                                                                class="card-img-top opacity-50 h-75  object-fit-cover"
+                                                                alt="Harimau">
+                                                            <div class="card-body">
+                                                                <p class="card- fw-bold">
+                                                                    Hewan Buas - Harimau
+                                                                    <audio src="sounds/suara-harimau.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card card-content">
+                                                            <img src="img/singa.jpg"
+                                                                class="card-img-top opacity-50 h-75 object-fit-cover "
+                                                                alt="Singa">
+                                                            <div class="card-body">
+                                                                <p class="card- fw-bold">
+                                                                    Hewan Buas - Singa
+                                                                    <audio src="sounds/suara-singa.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card card-content">
+                                                            <img src="img/beruang.jpg"
+                                                                class="card-img-top opacity-50 h-75 object-fit-cover "
+                                                                alt="Beruang">
+                                                            <div class="card-body">
+                                                                <p class="card- fw-bold">
+                                                                    Hewan Buas - Beruang
+                                                                    <audio src="sounds/suara-beruang.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Kategori Hewan Ternak
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card-group">
+                                                        <div class="card card-content">
+                                                            <img src="img/kambing.jpg"
+                                                                class="card-img-top opacity-50 h-75 object-fit-cover"
+                                                                alt="Kambing">
+                                                            <div class="card-body">
+                                                                <p class="card- fw-bold">
+                                                                    Hewan Ternak - Kambing
+                                                                    <audio src="sounds/suara-kambing.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card card-content">
+                                                            <img src="img/sapi.jpg"
+                                                                class="card-img-top opacity-50 h-75 object-fit-cover "
+                                                                alt="Sapi">
+                                                            <div class="card-body">
+                                                                <p class="card- fw-bold">
+                                                                    Hewan Ternak - Sapi
+                                                                    <audio src="sounds/suara-sapi.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card card-content">
+                                                            <img src="img/ayam.jpg"
+                                                                class="card-img-top opacity-50 h-75 object-fit-cover "
+                                                                alt="Ayam">
+                                                            <div class="card-body">
+                                                                <p class="card- fw-bold">
+                                                                    Hewan Ternak - Ayam
+                                                                    <audio src="sounds/suara-ayam.mp3"></audio>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p class="m-0 lead fs-6 text-center">Made with 💖 by <a
+                                    href="https://faykarr.vercel.app">faykarr</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap 5 Javascript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery v3.7 CDN -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
